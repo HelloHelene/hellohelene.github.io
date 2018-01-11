@@ -1,0 +1,49 @@
+$brand = #2fb77c
+
+body
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 14px
+  margin: 2em 5em
+h1
+  font-size: 2.5em
+  color: $brand
+  font-weight: 300
+  margin: 0
+.address
+  font-size: 1.2em
+.fa
+  font-size: 2em !important
+  color: $brand
+section
+  &.profile
+    display: flex
+    align-items: center
+    flex-direction: column
+  .address
+    color: rgba(0,0,0,0.5)
+  .grid
+    display: grid
+    width: 50vw
+    grid-template-columns: 1fr 1fr
+  .tag-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: 2em
+.job, .education
+  display: flex
+  .when, .what
+    flex: 1
+
+.heading
+  display: flex
+  align-items: center
+  justify-content: center
+  h2
+    margin: 2em 1em
+    white-space: nowrap
+  .line
+    height: 2px
+    width: 100%
+    background-color: $brand
