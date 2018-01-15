@@ -2,6 +2,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   margin: 2em 5em;
+  max-width: 900px;
+  margin: 0 auto;
 }
 h1 {
   font-size: 4em;
@@ -39,12 +41,12 @@ section .tag-container {
 .job,
 .education {
   display: flex;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .job:nth-child(n+4),
 .education:nth-child(n+4) {
   color: rgba(0,0,0,0.5);
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0 1em;
 }
 .job:nth-child(-n+3),
@@ -82,10 +84,7 @@ section .tag-container {
   width: 100%;
   background-color: #2fb77c;
 }
-.courses {
-  text-align: center;
-}
 .courses .course {
   font-size: 1.5em;
-  padding: 0.5em;
+  padding: 0.25em;
 }
