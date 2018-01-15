@@ -44,6 +44,8 @@ section .tag-container {
 .job:nth-child(n+4),
 .education:nth-child(n+4) {
   color: rgba(0,0,0,0.5);
+  font-size: 1.5em;
+  padding: 0 1em;
 }
 .job:nth-child(-n+3),
 .education:nth-child(-n+3) {
