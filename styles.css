@@ -1,22 +1,30 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
-  margin: 2em 5em;
+  margin: 1em 0;
+}
+body .content {
+  background-color: #fff;
   max-width: 900px;
   margin: 0 auto;
+  border: 2px solid #598765;
 }
 h1 {
   font-size: 4em;
-  color: #2fb77c;
-  font-weight: 300;
+  color: #fff;
   margin: 0;
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("green_dust_scratch.png");
 }
 .address {
   font-size: 1.2em;
 }
 .fa {
   font-size: 2em !important;
-  color: #2fb77c;
+  color: #598765;
 }
 section.profile {
   display: flex;
@@ -47,7 +55,7 @@ section .tag-container {
 .education:nth-child(n+4) {
   color: rgba(0,0,0,0.5);
   font-size: 1em;
-  padding: 0 1em;
+  padding: 0 25px;
 }
 .job:nth-child(-n+3),
 .education:nth-child(-n+3) {
@@ -58,7 +66,7 @@ section .tag-container {
 .job .what,
 .education .what {
   flex: 1;
-  padding: 0.25em 1em;
+  padding: 0.25em 25px;
 }
 .job .when,
 .education .when {
@@ -76,15 +84,25 @@ section .tag-container {
   justify-content: center;
 }
 .heading h2 {
-  margin: 2em 1em;
+  margin: 2em 0em;
+  padding: 0.25em 1em;
+  background-color: #598765;
+  color: #fff;
   white-space: nowrap;
 }
 .heading .line {
   height: 2px;
   width: 100%;
-  background-color: #2fb77c;
+  background-color: #598765;
+}
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .courses .course {
   font-size: 1.5em;
-  padding: 0.25em;
+  width: 50%;
+  padding: 0.5em 0.5em;
 }

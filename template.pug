@@ -5,38 +5,39 @@ html
     link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
   body
-    section.profile
-      h1= profile.name
-      .address= profile.address
-      p.tagline= profile.tagline
-      .grid
-        each tag in tags
-          div.tag-container
-            .fa(class='fa-' + tag.icon)
-            .tag=tag.value
-    section.work
-      .heading
-        .line
-        h2 Arbeidserfaring
-        .line
-      each job in jobs
-        .job
-          .when= job.when
-          .what= job.title
-    section.educations
-      .heading
-        .line
-        h2 Utdannelse
-        .line
-      each edu in education
-        .education
-          .when= edu.when
-          .what= edu.title
-    section.courses
-      .heading
-        .line
-        h2 Kurs og sertifiseringer
-        .line
-      ul
-      each course in courses
-        li.course= course
+    .content
+      section.profile
+        h1= profile.name
+        .address= profile.address
+        p.tagline= profile.tagline
+        .grid
+          each tag in tags
+            div.tag-container
+              .fa(class='fa-' + tag.icon)
+              .tag=tag.value
+      section.work
+        .heading
+          .line
+          h2 Arbeidserfaring
+          .line
+        each job in jobs
+          .job
+            .when= job.when
+            .what= job.title
+      section.educations
+        .heading
+          .line
+          h2 Utdannelse
+          .line
+        each edu in education
+          .education
+            .when= edu.when
+            .what= edu.title
+      section
+        .heading
+          .line
+          h2 Kurs og sertifiseringer
+          .line
+        .courses
+          each course in courses
+            .course= course
