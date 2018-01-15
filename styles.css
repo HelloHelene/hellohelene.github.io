@@ -4,7 +4,7 @@ body {
   margin: 2em 5em;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 4em;
   color: #2fb77c;
   font-weight: 300;
   margin: 0;
@@ -39,12 +39,32 @@ section .tag-container {
 .job,
 .education {
   display: flex;
+  font-size: 2em;
+}
+.job:nth-child(n+4),
+.education:nth-child(n+4) {
+  color: rgba(0,0,0,0.5);
+}
+.job:nth-child(-n+3),
+.education:nth-child(-n+3) {
+  font-weight: bold;
 }
 .job .when,
 .education .when,
 .job .what,
 .education .what {
   flex: 1;
+  padding: 0.25em 1em;
+}
+.job .when,
+.education .when {
+  text-align: right;
+  padding-right: 1.25em;
+}
+.job .what,
+.education .what {
+  text-align: left;
+  padding-left: 1.25em;
 }
 .heading {
   display: flex;
@@ -59,4 +79,11 @@ section .tag-container {
   height: 2px;
   width: 100%;
   background-color: #2fb77c;
+}
+.courses {
+  text-align: center;
+}
+.courses .course {
+  font-size: 1.5em;
+  padding: 0.5em;
 }
